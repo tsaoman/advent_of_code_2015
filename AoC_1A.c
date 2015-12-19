@@ -8,7 +8,7 @@
 
 int main (int argc, char * argv[])
 {
-  char buffer[MAX];
+  char buffer[MAX] = {0};
   int n = 0;
 
   if(fgets(buffer, MAX, stdin) == NULL)
@@ -28,14 +28,6 @@ int main (int argc, char * argv[])
     {
       n--;
     }
-
-    else
-    {
-      printf("Error: Non-parenthetical value entered.\n");
-      return 2;
-    }
   }
-
     printf("Floor: %d\n",n);
-
 }
