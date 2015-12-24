@@ -12,9 +12,6 @@ buff = sys.stdin.read()
 santa = buff[::2]
 robot = buff[1::2]
 
-print santa
-print robot
-
 for char in santa:
     if char == '^':
         Y += 1
