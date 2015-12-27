@@ -15,8 +15,7 @@ def vowelCheck(string):
     return n >= 3
 
 def consecutiveCheck(string):
-    pattern = re.compile(r'\S*(.)\1\S*')
-    return pattern.match(string)
+    return re.match(r'\S*(.)\1\S*', string)
 
 def exclusionCheck(string):
     exclusions = ['ab', 'cd', 'pq', 'xy']
